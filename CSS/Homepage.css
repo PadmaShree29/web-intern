@@ -1,0 +1,238 @@
+/* ===================== Global Styles ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===================== Top Bar ===================== */
+#container1 {
+  background-color: skyblue;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+#acc {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#log {
+  display: flex;
+  gap: 15px;
+}
+
+#log button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#log button:hover {
+  background-color: grey;
+}
+
+/* ===================== Middle Bar ===================== */
+#container2 {
+  background-color: rgb(92, 152, 175);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#child1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+#child2 input[type="text"] {
+  width: 300px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+#ic {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+/* ===================== Navigation Bar ===================== */
+#container3 {
+  background-color: skyblue;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== Carousel ===================== */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.category {
+  min-width: 150px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.category img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+/* ===================== Main Section ===================== */
+main {
+  display: flex;
+    justify-content: center;
+  align-items: flex-start; /* Aligns content properly */
+  /* padding: 60px; */
+  
+  background-color: #f7f7f7;
+  min-height: 400px; /* Ensures both sides have consistent height */
+}
+
+/* Left Side: Image Container */
+#cont1 {
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the text */
+  padding: 40px;
+  /* background-color: white; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;;
+}
+
+#promo-image {
+  width: 100%; /* Take up full width of the container */
+  height:auto; /* Maintain the aspect ratio */
+  max-height: 650px; /* Increase the height for a larger image */
+  object-fit: cover; /* Makes sure the full image is visible without cropping */
+  border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Right Side: Content Container */
+#part {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the text */
+  padding: 40px;
+  /* background-color: white; */
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Typography */
+#para1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+#para2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#para3 {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Button Style */
+#part button {
+  background-color: #333;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#part button:hover {
+  background-color: #77a7db;
+}

@@ -1,0 +1,100 @@
+/* Background and overall container */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://wallpapercave.com/wp/wp3006091.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #signup-container {
+    background-color:whitesmoke;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgb(64, 64, 123);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #2a9d8f;
+    outline: none;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  
+  span {
+    color: red;
+    font-size: 12px;
+  }
+  
+  #sub-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:rgb(64, 64, 123);;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #sub-btn:hover {
+    background-color:rgb(64, 64, 123);;
+  }
+  
+  #form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  #form-footer a {
+    color: rgb(64, 64, 123);;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  #form-footer a:hover {
+    text-decoration: underline;
+  }
+  .error{
+    color:red;
+  }
