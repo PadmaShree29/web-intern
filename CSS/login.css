@@ -9,6 +9,7 @@ body {
      background: url('https://wallpapercave.com/wp/wp3006091.jpg') no-repeat center center fixed;
     background-color: #f4f4f4;
     display: flex;
+    
     justify-content: center;
     align-items: center;
     height: 100vh;
